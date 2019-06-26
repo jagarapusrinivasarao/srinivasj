@@ -1,0 +1,43 @@
+.webTop {
+  background: #000 url("/assets/website-design.jpg") no-repeat center;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  height: 350px;
+  position: relative;
+}
+
+.webTop h1 {
+  color: #e1dee1;
+  position: absolute;
+  top: 100px;
+}
+
+.WCT h1 {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.WCT .WCD {
+  margin: 10px 0px;
+}
+
+.WCT .WCM {
+  background: #000 url("/assets/mobile-bg.jpg") no-repeat center;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+.WCT .WCM h1 {
+  color: #edeeef;
+}
+
+.WCT .WCM p {
+  color: #edeeef;
+}
+
+.WCT .WCM .mobileM {
+  text-align: right;
+}
+/*# sourceMappingURL=web.component.css.map */

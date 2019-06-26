@@ -1,0 +1,39 @@
+.aboutTop {
+  background: url("/assets/about.jpg") no-repeat center;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+.aboutTop .aboutT h1 {
+  color: #000000;
+  font-size: 30px;
+  padding: 50px 0px 20px 0px;
+}
+
+.aboutTop .aboutT h2 {
+  font-size: 25px;
+  color: #1b1b1b;
+  padding: 0px 0px 20px 0px;
+}
+
+.aboutTop .aboutT p {
+  color: #141416;
+  font-size: 16px;
+  padding: 0px 0px 20px 0px;
+}
+
+.aboutCT {
+  background: #edeeef;
+  padding: 20px 0px;
+  margin: -20px 0px 0px 0px;
+}
+
+.aboutCT h1 {
+  text-align: center;
+}
+
+.aboutCT p {
+  text-align: justify;
+}
+/*# sourceMappingURL=about.component.css.map */

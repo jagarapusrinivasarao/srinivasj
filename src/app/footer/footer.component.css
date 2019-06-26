@@ -1,0 +1,71 @@
+.footerT {
+  background: #000;
+  padding: 30px 0px;
+}
+
+.footerT .copyF p {
+  color: #fff;
+  text-align: right;
+}
+
+.footerT .footerM {
+  text-align: center !important;
+}
+
+.footerT .footerM ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.footerT .footerM ul li {
+  list-style-type: none;
+  text-align: left;
+  padding: 5px 0px;
+}
+
+.footerT .footerM ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: font-awesome;
+  font-weight: bold;
+}
+
+.footerT .footerM ul li a:hover {
+  opacity: 0.7;
+}
+
+.footerT .footerR {
+  text-align: center;
+}
+
+.footerT .footerR h4 {
+  color: #bfbebe;
+}
+
+.footerT .footerR ul li {
+  list-style-type: none;
+}
+
+.footerT .footerR ul li a {
+  color: #fff;
+  font-size: 18px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 0px;
+}
+
+.footerT .footerR ul li a:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 660px) {
+  .footerM ul li {
+    text-align: center !important;
+  }
+  .copyF p {
+    text-align: center !important;
+  }
+}
+/*# sourceMappingURL=footer.component.css.map */

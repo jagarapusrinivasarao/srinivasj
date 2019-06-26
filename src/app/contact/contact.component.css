@@ -1,0 +1,56 @@
+.contactTop {
+  background: #000 url("/assets/contact-inner.jpg") no-repeat center;
+  background-size: cover;
+  padding: 0xp;
+  margin: 0px;
+}
+
+.contactTop h1 {
+  color: #e1dee1;
+  padding: 40px 0px 20px 0px;
+}
+
+.contactTop h4 {
+  color: #e1dee1;
+  padding-bottom: 10px;
+}
+
+.contactTop .bface a {
+  font-size: 20px;
+  color: #e1dee1;
+  text-decoration: none;
+}
+
+.contactTop .bface i {
+  padding: 0px 5px 0px 5px;
+}
+
+.contactTop .scB {
+  padding-bottom: 20px;
+}
+
+.cuT {
+  padding: 0px;
+  margin: 0px;
+}
+
+.cuT h2 {
+  padding: 10px;
+  border-bottom: 1px dashed #5b5a59;
+}
+
+.cuT p {
+  padding: 10px 0px;
+}
+
+.cuT .callUs {
+  padding: 0px 0px 20px 0px;
+}
+
+.cuF {
+  background: #000 url("/assets/contact-bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  padding: 20px 0px;
+}
+/*# sourceMappingURL=contact.component.css.map */

@@ -1,0 +1,79 @@
+<div class="contactTop">
+  <div class="container">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 aboutT">
+        <h1>CONTACT ME</h1>
+        <h4>Follow Insight on Social Media to keep up-to-date with the latest Work news.</h4>
+        <div class="bface"><a href="https://www.facebook.com/srinivasjagarap/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>Like me on Facebook</a></div>
+        <div class="bface"><a href="https://twitter.com/srinivasjagarap" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i>Follow me on Twitter</a></div>
+        <div class="bface"><a href="https://www.linkedin.com/in/srinivasarao-jagarapu-50007312/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>Connect on LinkedIn</a></div>
+        <div class="bface scB"><a href="https://www.youtube.com/channel/UCoavlnehje9a8m7XpMEsZ0A?view_as=subscriber" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i>Subscribe on Youtube</a></div>
+    </div>
+ </div>
+</div>
+<div class="cuT">
+  <div class="container">
+      <h2>Contact Us</h2>
+      <p>We all here at JS encourage communication and put stock in being truly available with our customers and potential clients. For additional information on our UI Design, UI Developer, Digital Marketing(SEO, SMO, SEM) please contact us;</p>
+      <div>Email: <a href="mailto:jagarapusrinivas@gmail.com" target="_blank">jagarapusrinivas@gmail.com</a></div>
+      <div class="callUs">Call Us: 9000244810</div>
+  </div>
+    <div class="cuF">
+      <div class="container">
+        <div class="row clearfix">
+            <div class="col-lg-6 col-md-6 col-sm-6 float-left">
+                <div class="formAM">
+                  <address>
+                    <h5>Address:</h5>
+                      No: 1-15, Main Street,<br>
+                      Laxmipuram, Near Donkinavalasa Raillway Station,<br>
+                      Badangi-535578, Andhra Pradesh.
+                  </address>
+                </div>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 float-left">
+                 <div class="formMC">
+                    <h5>Fill up the form:</h5>
+                    <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                      <div class="form-group">
+                          <label for="firstName">First Name</label>
+                          <input type="text" class="form-control" name="firstName" [(ngModel)]="model.firstName" #firstName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }" required />
+                          <div *ngIf="f.submitted && firstName.invalid" class="invalid-feedback">
+                              <div *ngIf="firstName.errors.required">First Name is required</div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="lastName">Last Name</label>
+                          <input type="text" class="form-control" name="lastName" [(ngModel)]="model.lastName" #lastName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && lastName.invalid }" required />
+                          <div *ngIf="f.submitted && lastName.invalid" class="invalid-feedback">
+                              <div *ngIf="lastName.errors.required">Last Name is required</div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+                          <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                              <div *ngIf="email.errors.required">Email is required</div>
+                              <div *ngIf="email.errors.email">Email must be a valid email address</div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required minlength="6" />
+                          <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                              <div *ngIf="password.errors.required">Password is required</div>
+                              <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <button class="btn btn-primary">Register</button>
+                      </div>
+                  </form>
+
+
+                 </div>
+              </div>
+
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.digitalT {
+  background: #000 url("/assets/digital-slider.jpg") no-repeat center;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  height: 350px;
+  position: relative;
+}
+
+.digitalT h1 {
+  color: #e1dee1;
+  position: absolute;
+  top: 100px;
+}
+
+.dmCT h1 {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.dmCT .dmS {
+  margin: 10px 0px;
+}
+
+.dmCT .dmSM {
+  background: #000 url("/assets/smo-bg.jpg") no-repeat center;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+.dmCT .dmSM h1 {
+  color: #edeeef;
+}
+
+.dmCT .dmSM p {
+  color: #edeeef;
+}
+/*# sourceMappingURL=digital.component.css.map */

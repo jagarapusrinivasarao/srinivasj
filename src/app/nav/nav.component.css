@@ -1,0 +1,47 @@
+.navTop {
+  background: #000;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+  -webkit-box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.75);
+  -o-box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.75);
+  -ms-box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.75);
+}
+
+.navTop .navbar-brand {
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: Bold;
+  font-size: 25px;
+  font-family: "font-awesome";
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.navTop .navbar-nav {
+  font-weight: bold;
+}
+
+.navTop .social li {
+  list-style-type: none;
+  float: left;
+}
+
+.navTop .social li a {
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.navTop .social li a:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+/*# sourceMappingURL=nav.component.css.map */

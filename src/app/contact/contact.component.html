@@ -1,0 +1,121 @@
+<div class="contactTop">
+  <div class="container">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 aboutT">
+        <h1>CONTACT ME</h1>
+        <h4>Follow Insight on Social Media to keep up-to-date with the latest Work news.</h4>
+        <div class="bface"><a href="https://www.facebook.com/srinivasjagarap/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>Like me on Facebook</a></div>
+        <div class="bface"><a href="https://twitter.com/srinivasjagarap" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i>Follow me on Twitter</a></div>
+        <div class="bface"><a href="https://www.linkedin.com/in/srinivasarao-jagarapu-50007312/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>Connect on LinkedIn</a></div>
+        <div class="bface scB"><a href="https://www.youtube.com/channel/UCoavlnehje9a8m7XpMEsZ0A?view_as=subscriber" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i>Subscribe on Youtube</a></div>
+    </div>
+ </div>
+</div>
+<div class="cuT">
+  <div class="container">
+      <h2>Contact Us</h2>
+      <p>We all here at JS encourage communication and put stock in being truly available with our customers and potential clients. For additional information on our UI Design, UI Developer, Digital Marketing(SEO, SMO, SEM) please contact us;</p>
+      <div>Email: <a href="mailto:jagarapusrinivas@gmail.com" target="_blank">jagarapusrinivas@gmail.com</a></div>
+      <div class="callUs">Call Us: 9000244810</div>
+  </div>
+    <div class="cuF">
+      <div class="container">
+        <div class="row clearfix">
+            <div class="col-lg-6 col-md-6 col-sm-6 float-left">
+                <div class="formAM">
+                  <address>
+                    <h5>Address:</h5>
+                      No: 1-15, Main Street,<br>
+                      Laxmipuram, Near Donkinavalasa Raillway Station,<br>
+                      Badangi-535578, Andhra Pradesh.
+                  </address>
+                </div>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 float-left">
+                 <div class="formMC">
+                    <h5>Fill up the form:</h5>
+                    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+                       <div class="form-group">
+                            <label>First Name*:</label>
+                            <input type="text" [(ngModel)]="user.firstName" class="form-control" [ngClass]="{'is-invalid':userFirstName.errors && userFirstName.touched }" name="firstName" placeholder="FirstName" #userFirstName="ngModel" required minlength="2"/>
+                            <div [hidden]="!(userFirstName.invalid&&userFirstName.touched)">
+                              <div [hidden]="!userFirstName.errors?.required" class="alert alert-danger">
+                                  First name required
+                              </div>
+                              <div [hidden]="!userFirstName.errors?.minlength" class="alert alert-danger">
+                                  Must be atleast 2 characters
+                              </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name*:</label>
+                            <input type="text" class="form-control" [(ngModel)]="user.lastName" [ngClass]="{'is-invalid':userLastName.errors && userLastName.touched }" name="lastName" placeholder="lastName" #userLastName="ngModel" required minlength="2"/>
+                            <div [hidden]="!(userLastName.invalid&&userLastName.touched)">
+                              <div [hidden]="!userLastName.errors?.required" class="alert alert-danger">
+                                  Last name required
+                              </div>
+                              <div [hidden]="!userLastName.errors?.minlength" class="alert alert-danger">
+                                  Must be atleast 2 characters
+                              </div>
+                          </div>
+                        </div>
+                          <div class="form-group">
+                              <label>Your Email*:</label>
+                              <input type="email" class="form-control" [(ngModel)]="user.email"
+                              [ngClass]="{'is-invalid':userEmail.errors && userEmail.touched }"
+                               name="email" placeholder="email"  #userEmail="ngModel" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"/>
+                               <div [hidden]="!(userEmail.invalid&&userEmail.touched)">
+                                <div [hidden]="!userEmail.errors?.required" class="alert alert-danger">
+                                    Email name required
+                                </div>
+                                <div [hidden]="!userEmail.errors?.pattern" class="alert alert-danger">
+                                    Email is notvalid
+                                </div>
+                            </div>
+                          </div>
+                           <div class="form-group">
+                               <label>Mobile Number*:</label>
+                               <input type="email" class="form-control" [(ngModel)]="user.mobile"
+                              [ngClass]="{'is-invalid':userMobile.errors && userMobile.touched }"
+                               name="mobile" placeholder="Enter Mobile Number"  #userMobile="ngModel" required />
+                               <div class="invalid-feedback">
+                                <div [hidden]="!(userMobile.invalid&&userMobile.touched)">
+                                  <div [hidden]="!userMobile.errors?.required" class="alert alert-danger">
+                                      Mobile number valid
+                                  </div>
+                              </div>
+                              </div>
+                           </div>
+                           <!-- <div class="form-group">
+                                 <label for="exampleFormControlSelect2">Example multiple select:</label>
+                                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                                             <option>UI Designer</option>
+                                             <option>UI Developer</option>
+                                             <option>Mobile App</option>
+                                             <option>SEO</option>
+                                             <option>SMO</option>
+                                             <option>SEM</option>
+                                          </select>
+                            </div> -->
+                           <div class="form-group">
+                                <label>Your Message*:</label>
+                                <textarea class="form-control" [(ngModel)]="user.message" [ngClass]="{'is-invalid':userMessage.errors && userMessage.touched }" name="message" placeholder="Enter Message" rows="5" #userMessage="ngModel" required></textarea>
+                                <div class="invalid-feedback">
+                                  <div [hidden]="!(userMessage.invalid&&userMessage.touched)">
+                                     <div [hidden]="!userMessage.errors?.required" class="alert alert-danger">
+                                        Message is required
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button [disabled]="!userForm.form.valid" class="btn btn-block btn-success" style="margin:5px 0px 0px 0px;">SUBMIT</button>
+                            </div>
+                     </form>
+
+                 </div>
+              </div>
+
+        </div>
+      </div>
+    </div>
+</div>
